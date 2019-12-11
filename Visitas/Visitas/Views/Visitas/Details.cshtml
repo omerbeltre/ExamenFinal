@@ -1,0 +1,66 @@
+﻿@model Visitas.Models.Visitas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Visitas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_Visita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_Visita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Visita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Visita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora_Entrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora_Entrada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora_Salida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora_Salida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Completo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Completo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contacto_que_lo_recibio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contacto_que_lo_recibio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idVisitas }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
